@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { AuthForm } from "@/components/auth/auth-form";
 
-export const metadata: Metadata = { title: "Create an account", robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: "Sign Up", robots: { index: false, follow: false } };
 
 export default function RegisterPage() {
   return <main className="grid min-h-screen place-items-center bg-[radial-gradient(ellipse_at_top_right,color-mix(in_oklch,var(--brand-champagne),transparent_48%),transparent_55%),linear-gradient(180deg,var(--brand-ivory),var(--brand-parchment))] px-5 py-12">
