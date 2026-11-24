@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { Heart } from "lucide-react";
+
+export function TemplateNavigation() {
+  return <header className="sticky top-0 z-30 border-b border-border/70 bg-background/90 backdrop-blur-xl"><div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-page py-4"><Link href="/" className="flex shrink-0 items-center gap-3" aria-label="Everafter home"><span className="grid size-10 place-items-center rounded-full bg-primary text-primary-foreground"><Heart aria-hidden="true" className="size-4" /></span><span><span className="block font-heading text-xl leading-none">Everafter</span><span className="mt-1 block text-[0.6rem] tracking-[0.2em] text-muted-foreground">WEDDING INVITATIONS</span></span></Link><nav aria-label="Template navigation" className="flex items-center gap-2 sm:gap-4"><Link href="/templates" className="rounded-full px-3 py-2 text-sm text-muted-foreground transition hover:bg-secondary hover:text-foreground">Explore</Link><Link href="/templates/favorites" className="rounded-full px-3 py-2 text-sm text-muted-foreground transition hover:bg-secondary hover:text-foreground">Saved</Link><Link href="/login" className="rounded-full border border-border px-3 py-2 text-sm transition hover:bg-secondary sm:px-4">Sign in</Link></nav></div></header>;
+}
